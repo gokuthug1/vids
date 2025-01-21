@@ -1,11 +1,12 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Video Layout</title>
+  <title>Video Categories</title>
   <style>
-    /* Basic Reset */
+    /* Reset and global styles */
     * {
       margin: 0;
       padding: 0;
@@ -16,20 +17,61 @@
       font-family: Arial, sans-serif;
       background-color: #f4f4f9;
       color: #333;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
     }
 
-    /* Container for the video layout */
+    header {
+      background-color: #333;
+      color: white;
+      padding: 10px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    header h1 {
+      font-size: 1.5rem;
+    }
+
+    nav {
+      display: flex;
+      gap: 15px;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: white;
+      padding: 8px 12px;
+      border-radius: 5px;
+      transition: background-color 0.3s;
+    }
+
+    nav a:hover {
+      background-color: #555;
+    }
+
+    /* Section styling */
+    section {
+      padding: 20px;
+      margin-top: 10px;
+    }
+
+    section h2 {
+      margin-bottom: 15px;
+      font-size: 1.5rem;
+      color: #333;
+      border-bottom: 2px solid #ccc;
+      padding-bottom: 5px;
+    }
+
+    /* Video grid */
     .video-container {
       display: grid;
       grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
       gap: 15px;
-      width: 90%;
-      max-width: 1200px;
-      margin: 20px;
     }
 
     .video-item {
@@ -52,7 +94,6 @@
       object-fit: cover;
     }
 
-    /* Styling for the overlay (if any) */
     .video-overlay {
       position: absolute;
       top: 50%;
@@ -73,40 +114,99 @@
 </head>
 <body>
 
-  <div class="video-container">
-    <div class="video-item">
-      <video controls>
-        <source src="v.mp4" type="video/mp4">
-        Your browser does not support the video tag.
-      </video>
-      <div class="video-overlay">Video 1 - v.mp4</div>
-    </div>
-    
-    <div class="video-item">
-      <video controls>
-        <source src="video2.mp4" type="video/mp4">
-        Your browser does not support the video tag.
-      </video>
-      <div class="video-overlay">Video 2</div>
-    </div>
+  <header>
+    <h1>Video Library</h1>
+    <nav>
+      <a href="#fav-tv-shows">Fav TV Shows</a>
+      <a href="#anime-series">Anime Series</a>
+      <a href="#random">Random</a>
+      <a href="#test">Test</a>
+    </nav>
+  </header>
 
-    <div class="video-item">
-      <video controls>
-        <source src="video3.mp4" type="video/mp4">
-        Your browser does not support the video tag.
-      </video>
-      <div class="video-overlay">Video 3</div>
+  <!-- Fav TV Shows Section -->
+  <section id="fav-tv-shows">
+    <h2>Fav TV Shows</h2>
+    <div class="video-container">
+      <div class="video-item">
+        <video controls>
+          <source src="fav-tv1.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <div class="video-overlay">Fav TV Show 1</div>
+      </div>
+      <div class="video-item">
+        <video controls>
+          <source src="fav-tv2.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <div class="video-overlay">Fav TV Show 2</div>
+      </div>
     </div>
+  </section>
 
-    <!-- More videos can be added in the same way -->
-    <div class="video-item">
-      <video controls>
-        <source src="video4.mp4" type="video/mp4">
-        Your browser does not support the video tag.
-      </video>
-      <div class="video-overlay">Video 4</div>
+  <!-- Anime Series Section -->
+  <section id="anime-series">
+    <h2>Anime Series</h2>
+    <div class="video-container">
+      <div class="video-item">
+        <video controls>
+          <source src="anime1.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <div class="video-overlay">Anime Series 1</div>
+      </div>
+      <div class="video-item">
+        <video controls>
+          <source src="anime2.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <div class="video-overlay">Anime Series 2</div>
+      </div>
     </div>
-  </div>
+  </section>
+
+  <!-- Random Section -->
+  <section id="random">
+    <h2>Random</h2>
+    <div class="video-container">
+      <div class="video-item">
+        <video controls>
+          <source src="random1.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <div class="video-overlay">Random Video 1</div>
+      </div>
+      <div class="video-item">
+        <video controls>
+          <source src="random2.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <div class="video-overlay">Random Video 2</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Test Section -->
+  <section id="test">
+    <h2>Test</h2>
+    <div class="video-container">
+      <div class="video-item">
+        <video controls>
+          <source src="v.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <div class="video-overlay">Test Video 1</div>
+      </div>
+      <div class="video-item">
+        <video controls>
+          <source src="v2.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <div class="video-overlay">Test Video 2</div>
+      </div>
+    </div>
+  </section>
 
 </body>
 </html>
