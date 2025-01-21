@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Anime Home</title>
+  <style>
+    /* Global styles */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f9;
+      color: #333;
+    }
+
+    header {
+      background-color: #333;
+      color: white;
+      padding: 10px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    header h1 {
+      font-size: 1.8rem;
+    }
+
+    nav {
+      display: flex;
+      gap: 15px;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: white;
+      padding: 8px 12px;
+      border-radius: 5px;
+      transition: background-color 0.3s;
+    }
+
+    nav a:hover {
+      background-color: #555;
+    }
+
+    main {
+      padding: 20px;
+    }
+
+    h2 {
+      margin-bottom: 15px;
+      font-size: 1.8rem;
+      color: #333;
+      border-bottom: 2px solid #ccc;
+      padding-bottom: 5px;
+    }
+
+    /* Anime grid layout */
+    .anime-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 20px;
+    }
+
+    .anime-item {
+      text-align: center;
+    }
+
+    .anime-item img {
+      width: 100%;
+      max-width: 300px;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .anime-item img:hover {
+      transform: scale(1.05);
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+      cursor: pointer;
+    }
+
+    .anime-item h3 {
+      margin-top: 10px;
+      font-size: 1.2rem;
+      color: #333;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Anime Library</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="AnimeS.html">Anime</a>
+      <a href="Random.html">Random</a>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Anime Series</h2>
+    <div class="anime-grid">
+
+      <!-- Absolute Duo -->
+      <div class="anime-item">
+        <a href="AbsoluteDuo.html">
+          <img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRfACPpx9MbLeHPcOJ0g6iWv6fhRY_O9d9MjNl2H8TZvEt_1iJW" alt="Absolute Duo">
+        </a>
+        <h3>Absolute Duo</h3>
+      </div>
+
+      <!-- Coming Soon -->
+      <div class="anime-item">
+        <a href="?.html">
+          <img src="https://" alt="?">
+        </a>
+        <h3>Coming Soon</h3>
+      </div>
+
+      <!-- Coming Soon -->
+      <div class="anime-item">
+        <a href="?.html">
+          <img src="https://" alt="?">
+        </a>
+        <h3>Coming Soon</h3>
+      </div>
+
+    </div>
+  </main>
+
+</body>
+</html>
