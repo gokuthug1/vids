@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Random Videos</title>
+  <style>
+    /* General styles */
+    body {
+      font-family: Arial, sans-serif;
+      background: linear-gradient(to bottom, #2c3e50, #34495e);
+      color: white;
+      margin: 0;
+    }
+
+    header {
+      background-color: #333;
+      color: white;
+      padding: 15px 20px;
+      text-align: center;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    }
+
+    h1 {
+      font-size: 2rem;
+    }
+
+    .video-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 15px;
+      padding: 20px;
+    }
+
+    .video-item {
+      background-color: #000;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      padding: 10px;
+    }
+
+    .video-item:hover {
+      transform: scale(1.05);
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    }
+
+    video {
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+    }
+
+    .video-title {
+      text-align: center;
+      margin-top: 10px;
+      font-size: 1rem;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Random Videos</h1>
+  </header>
+
+  <section class="video-container">
+    <div class="video-item">
+      <video controls>
+        <source src="salt.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+      <div class="video-title">Salt in my mouth</div>
+    </div>
+    <div class="video-item">
+      <video controls>
+        <source src="whyulooklikedat.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+      <div class="video-title">Why u look like that?</div>
+    </div>
+    <div class="video-item">
+      <video controls>
+        <source src="video3.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+      <div class="video-title">Random Video 3</div>
+    </div>
+    <div class="video-item">
+      <video controls>
+        <source src="video4.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+      <div class="video-title">Random Video 4</div>
+    </div>
+  </section>
+
+</body>
+</html>
