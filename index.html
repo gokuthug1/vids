@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Video Layout</title>
+  <style>
+    /* Basic Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f9;
+      color: #333;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    /* Container for the video layout */
+    .video-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 15px;
+      width: 90%;
+      max-width: 1200px;
+      margin: 20px;
+    }
+
+    .video-item {
+      position: relative;
+      background-color: #000;
+      overflow: hidden;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .video-item:hover {
+      transform: scale(1.05);
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    }
+
+    .video-item video {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    /* Styling for the overlay (if any) */
+    .video-overlay {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: white;
+      font-size: 18px;
+      background-color: rgba(0, 0, 0, 0.5);
+      padding: 10px;
+      border-radius: 5px;
+      display: none;
+    }
+
+    .video-item:hover .video-overlay {
+      display: block;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="video-container">
+    <div class="video-item">
+      <video controls>
+        <source src="v.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+      <div class="video-overlay">Video 1 - v.mp4</div>
+    </div>
+    
+    <div class="video-item">
+      <video controls>
+        <source src="video2.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+      <div class="video-overlay">Video 2</div>
+    </div>
+
+    <div class="video-item">
+      <video controls>
+        <source src="video3.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+      <div class="video-overlay">Video 3</div>
+    </div>
+
+    <!-- More videos can be added in the same way -->
+    <div class="video-item">
+      <video controls>
+        <source src="video4.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+      <div class="video-overlay">Video 4</div>
+    </div>
+  </div>
+
+</body>
+</html>
