@@ -1,5 +1,3 @@
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -71,45 +69,18 @@
     /* Video grid */
     .video-container {
       display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-      gap: 15px;
+      grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+      gap: 25px;
     }
-
-    .video-item {
-      position: relative;
-      background-color: #000;
-      overflow: hidden;
-      border-radius: 10px;
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    
+    /* The script creates a .video-player-container, which we can style */
+    .video-item .video-player-container {
       transition: transform 0.3s ease, box-shadow 0.3s ease;
     }
 
-    .video-item:hover {
-      transform: scale(1.05);
-      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-    }
-
-    .video-item video {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-    }
-
-    .video-overlay {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      color: white;
-      font-size: 18px;
-      background-color: rgba(0, 0, 0, 0.5);
-      padding: 10px;
-      border-radius: 5px;
-      display: none;
-    }
-
-    .video-item:hover .video-overlay {
-      display: block;
+    .video-item .video-player-container:hover {
+      transform: scale(1.03);
+      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.25);
     }
   </style>
 </head>
@@ -130,18 +101,14 @@
     <h2>Fav TV Shows</h2>
     <div class="video-container">
       <div class="video-item">
-        <video controls>
+        <video class="cvp" width="854" height="480">
           <source src="fav-tv1.mp4" type="video/mp4">
-          Your browser does not support the video tag.
         </video>
-        <div class="video-overlay">Fav TV Show 1</div>
       </div>
       <div class="video-item">
-        <video controls>
+        <video class="cvp" width="854" height="480">
           <source src="fav-tv2.mp4" type="video/mp4">
-          Your browser does not support the video tag.
         </video>
-        <div class="video-overlay">Fav TV Show 2</div>
       </div>
     </div>
   </section>
@@ -151,21 +118,17 @@
     <h2>Test</h2>
     <div class="video-container">
       <div class="video-item">
-        <video controls>
+        <video class="cvp" width="854" height="480">
           <source src="v.mp4" type="video/mp4">
-          Your browser does not support the video tag.
         </video>
-        <div class="video-overlay">Test Video 1</div>
       </div>
       <div class="video-item">
-        <video controls>
+        <video class="cvp" width="854" height="480">
           <source src="v2.mp4" type="video/mp4">
-          Your browser does not support the video tag.
         </video>
-        <div class="video-overlay">Test Video 2</div>
       </div>
     </div>
   </section>
-
+  <script src="https://cdn.jsdelivr.net/gh/gokuthug1/gokuplr@1.3/plr.js" defer></script>
 </body>
 </html>
