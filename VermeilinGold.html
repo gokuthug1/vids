@@ -3,142 +3,76 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Vermeil in Gold</title>
-  <style>
-    /* General styles */
-    body {
-      font-family: Arial, sans-serif;
-      background: linear-gradient(to bottom, #2c3e50, #34495e);
-      color: white;
-      margin: 0;
-    }
-
-    header {
-      background-color: #333;
-      color: white;
-      padding: 15px 20px;
-      text-align: center;
-      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
-    }
-
-    h1 {
-      font-size: 2rem;
-    }
-
-    .video-container {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-      gap: 15px;
-      padding: 20px;
-    }
-
-    .video-item {
-      position: relative;
-      background-color: #000;
-      border-radius: 10px;
-      overflow: hidden;
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
-    }
-
-    .video-item:hover {
-      transform: scale(1.05);
-      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-    }
-
-    .video-item iframe {
-      width: 100%;
-      height: 100%;
-      border: none;
-    }
-
-    .video-overlay {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      color: white;
-      background: rgba(0, 0, 0, 0.6);
-      padding: 8px 12px;
-      border-radius: 5px;
-      font-size: 16px;
-      display: none;
-    }
-
-    .video-item:hover .video-overlay {
-      display: block;
-    }
-  </style>
+  <title>Vermeil in Gold Episodes - My Library</title>
+  <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body class="dark-theme">
 
-  <header>
-    <h1>Vermeil in Gold Episodes</h1>
+  <header class="episode-header">
+    <h1>Vermeil in Gold</h1>
   </header>
+  
+  <nav class="sub-nav">
+    <a href="AnimeS.html">← Back to Anime Series</a>
+  </nav>
 
-  <section class="video-container">
-    <!-- Episode Items -->
-    <div class="video-item">
-      <iframe src="https://drive.google.com/file/d/1Z7OPfgmVSxsIJ73SFpyfA_EGaDOZTzAY/preview" 
-              allow="autoplay; fullscreen" allowfullscreen></iframe>
-      <div class="video-overlay">Vermeil in Gold Episode 1</div>
+  <main>
+    <div class="item-grid">
+      <!-- Episode Items -->
+      <div class="grid-item video-item">
+        <iframe src="https://drive.google.com/file/d/1Z7OPfgmVSxsIJ73SFpyfA_EGaDOZTzAY/preview" allow="autoplay; fullscreen" allowfullscreen></iframe>
+        <div class="video-overlay">Episode 1</div>
+      </div>
+      <div class="grid-item video-item">
+        <iframe src="https://drive.google.com/file/d/1c0WjvlP1qLxpU1Hjv7hD6-LA_dmu5v1r/preview" allow="autoplay; fullscreen" allowfullscreen></iframe>
+        <div class="video-overlay">Episode 2</div>
+      </div>
+      <div class="grid-item video-item">
+        <iframe src="https://drive.google.com/file/d/1L2rvOonk7OCA58iHPfdq570q99fstnT9/preview" allow="autoplay; fullscreen" allowfullscreen></iframe>
+        <div class="video-overlay">Episode 3</div>
+      </div>
+      <div class="grid-item video-item">
+        <iframe src="https://drive.google.com/file/d/16LdAIzpCZtak1q_R1y7Bbou6N3amS8Hk/preview" allow="autoplay; fullscreen" allowfullscreen></iframe>
+        <div class="video-overlay">Episode 4</div>
+      </div>
+      <div class="grid-item video-item">
+        <iframe src="https://drive.google.com/file/d/1aNbRebUcuLE66ZnaS5TwpqbG3QXms1xJ/preview" allow="autoplay; fullscreen" allowfullscreen></iframe>
+        <div class="video-overlay">Episode 5</div>
+      </div>
+      <div class="grid-item video-item">
+        <iframe src="https://drive.google.com/file/d/1PCMZe1inCulyvS_JgNvrlyKFqVT418_p/preview" allow="autoplay; fullscreen" allowfullscreen></iframe>
+        <div class="video-overlay">Episode 6</div>
+      </div>
+      <div class="grid-item video-item">
+        <iframe src="https://drive.google.com/file/d/101ZLl-FwB5NbWJNj-SPVAh_kvlEGqjk1/preview" allow="autoplay; fullscreen" allowfullscreen></iframe>
+        <div class="video-overlay">Episode 7</div>
+      </div>
+      <div class="grid-item video-item">
+        <iframe src="https://drive.google.com/file/d/1p9ACYOJvB5wGB6--RZuBNho5t_TsLomN/preview" allow="autoplay; fullscreen" allowfullscreen></iframe>
+        <div class="video-overlay">Episode 8</div>
+      </div>
+      <div class="grid-item video-item">
+        <iframe src="https://drive.google.com/file/d/1dA3qd9RMVwaJiRVZhNZWok3CdK5l6S-I/preview" allow="autoplay; fullscreen" allowfullscreen></iframe>
+        <div class="video-overlay">Episode 9</div>
+      </div>
+      <div class="grid-item video-item">
+        <iframe src="https://drive.google.com/file/d/1xAIQ9qb8IAoa5nwA2n0Sf0v_FqsjyiPN/preview" allow="autoplay; fullscreen" allowfullscreen></iframe>
+        <div class="video-overlay">Episode 10</div>
+      </div>
+      <div class="grid-item video-item">
+        <iframe src="https://drive.google.com/file/d/1yv2_HQE_91TNjavTo9nFx4-4UbbGlyM4/preview" allow="autoplay; fullscreen" allowfullscreen></iframe>
+        <div class="video-overlay">Episode 11</div>
+      </div>
+      <div class="grid-item video-item">
+        <iframe src="https://drive.google.com/file/d/14ZbzAsJfh0i3qHFZqELiS4sfs6DoGc_6/preview" allow="autoplay; fullscreen" allowfullscreen></iframe>
+        <div class="video-overlay">Episode 12</div>
+      </div>
     </div>
-    <div class="video-item">
-      <iframe src="https://drive.google.com/file/d/1c0WjvlP1qLxpU1Hjv7hD6-LA_dmu5v1r/preview" 
-              allow="autoplay; fullscreen" allowfullscreen></iframe>
-      <div class="video-overlay">Vermeil in Gold Episode 2</div>
-    </div>
-    <div class="video-item">
-      <iframe src="https://drive.google.com/file/d/1L2rvOonk7OCA58iHPfdq570q99fstnT9/preview" 
-              allow="autoplay; fullscreen" allowfullscreen></iframe>
-      <div class="video-overlay">Vermeil in Gold Episode 3</div>
-    </div>
-    <div class="video-item">
-      <iframe src="https://drive.google.com/file/d/16LdAIzpCZtak1q_R1y7Bbou6N3amS8Hk/preview" 
-              allow="autoplay; fullscreen" allowfullscreen></iframe>
-      <div class="video-overlay">Vermeil in Gold Episode 4</div>
-    </div>
-    <div class="video-item">
-      <iframe src="https://drive.google.com/file/d/1aNbRebUcuLE66ZnaS5TwpqbG3QXms1xJ/preview" 
-              allow="autoplay; fullscreen" allowfullscreen></iframe>
-      <div class="video-overlay">Vermeil in Gold Episode 5</div>
-    </div>
-    <div class="video-item">
-      <iframe src="https://drive.google.com/file/d/1PCMZe1inCulyvS_JgNvrlyKFqVT418_p/preview" 
-              allow="autoplay; fullscreen" allowfullscreen></iframe>
-      <div class="video-overlay">Vermeil in Gold Episode 6</div>
-    </div>
-    <div class="video-item">
-      <iframe src="https://drive.google.com/file/d/101ZLl-FwB5NbWJNj-SPVAh_kvlEGqjk1/preview" 
-              allow="autoplay; fullscreen" allowfullscreen></iframe>
-      <div class="video-overlay">Vermeil in Gold Episode 7</div>
-    </div>
-    <div class="video-item">
-      <iframe src="https://drive.google.com/file/d/1p9ACYOJvB5wGB6--RZuBNho5t_TsLomN/preview" 
-              allow="autoplay; fullscreen" allowfullscreen></iframe>
-      <div class="video-overlay">Vermeil in Gold Episode 8</div>
-    </div>
-    <div class="video-item">
-      <iframe src="https://drive.google.com/file/d/1dA3qd9RMVwaJiRVZhNZWok3CdK5l6S-I/preview" 
-              allow="autoplay; fullscreen" allowfullscreen></iframe>
-      <div class="video-overlay">Vermeil in Gold Episode 9</div>
-    </div>
-    <div class="video-item">
-      <iframe src="https://drive.google.com/file/d/1xAIQ9qb8IAoa5nwA2n0Sf0v_FqsjyiPN/preview" 
-              allow="autoplay; fullscreen" allowfullscreen></iframe>
-      <div class="video-overlay">Vermeil in Gold Episode 10</div>
-    </div>
-    <div class="video-item">
-      <iframe src="https://drive.google.com/file/d/1yv2_HQE_91TNjavTo9nFx4-4UbbGlyM4/preview" 
-              allow="autoplay; fullscreen" allowfullscreen></iframe>
-      <div class="video-overlay">Vermeil in Gold Episode 11</div>
-    </div>
-    <div class="video-item">
-      <iframe src="https://drive.google.com/file/d/14ZbzAsJfh0i3qHFZqELiS4sfs6DoGc_6/preview" 
-              allow="autoplay; fullscreen" allowfullscreen></iframe>
-      <div class="video-overlay">Vermeil in Gold Episode 12</div>
-    </div>
-  </section>
+  </main>
+  
+  <footer class="site-footer">
+    <p>&copy; 2025 My Video Library</p>
+  </footer>
 
 </body>
 </html>
