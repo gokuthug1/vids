@@ -4,7 +4,94 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Music Videos - My Library</title>
-  <link rel="stylesheet" href="style.css">
+  <style>
+    /*
+     * CSS from style.css would go here.
+     * Below is some basic styling to make the layout functional.
+     */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background-color: #f4f4f4;
+      color: #333;
+    }
+    .site-header {
+      background-color: #333;
+      color: #fff;
+      padding: 1em 0;
+      text-align: center;
+    }
+    .site-header h1 {
+      margin: 0;
+    }
+    .site-header nav {
+      margin-top: 10px;
+    }
+    .site-header nav a {
+      color: #fff;
+      text-decoration: none;
+      padding: 0.5em 1em;
+      margin: 0 5px;
+      border-radius: 5px;
+    }
+    .site-header nav a:hover,
+    .site-header nav a.active {
+      background-color: #555;
+    }
+    main {
+      padding: 20px;
+      max-width: 1200px;
+      margin: 20px auto;
+      background-color: #fff;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      border-radius: 8px;
+    }
+    .section-title {
+      text-align: center;
+      color: #333;
+      margin-bottom: 30px;
+    }
+    .item-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      gap: 20px;
+    }
+    .grid-item {
+      background-color: #eee;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      overflow: hidden;
+      text-align: center;
+      padding: 15px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    }
+    .grid-item video.cvp {
+      width: 100%; /* Make video responsive within its container */
+      height: auto;
+      display: block; /* Remove extra space below video */
+      max-width: 854px; /* Maintain original max-width if desired */
+      margin: 0 auto;
+    }
+    .grid-item h3 {
+      margin: 10px 0 0;
+      color: #555;
+    }
+    .placeholder-item {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: #f9f9f9;
+      color: #aaa;
+      height: 200px; /* Example fixed height for placeholders */
+    }
+    .site-footer {
+      background-color: #333;
+      color: #fff;
+      text-align: center;
+      padding: 1em 0;
+      margin-top: 30px;
+    }
+  </style>
 </head>
 <body>
 
@@ -24,29 +111,34 @@
 
       <!-- Video 1: owgut.mp4 -->
       <div class="grid-item">
-        <video class="cvp" width="854" height="480">
+        <video class="cvp" width="854" height="480" controls>
           <source src="owgut.mp4" type="video/mp4">
+          Your browser does not support the video tag.
         </video>
       </div>
 
       <!-- Video 2: dyfr.mp4 -->
       <div class="grid-item">
-        <video class="cvp" width="854" height="480">
+        <video class="cvp" width="854" height="480" controls>
           <source src="dyfr.mp4" type="video/mp4">
+          Your browser does not support the video tag.
         </video>
       </div>
 
       <!-- Video 3: gravity.mp4 -->
       <div class="grid-item">
-        <video class="cvp" width="854" height="480">
+        <video class="cvp" width="854" height="480" controls>
           <source src="gravity.mp4" type="video/mp4">
+          Your browser does not support the video tag.
         </video>
       </div>
 
-      <!-- Placeholder 4 -->
+      <!-- Placeholder 4: Fixed unclosed video tag -->
       <div class="grid-item placeholder-item">
-        <video class="cvp" width="854" height="480">
+        <video class="cvp" width="854" height="480" controls>
           <source src="hgtu.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
       </div>
       
       <!-- Placeholder 5 -->
@@ -75,7 +167,6 @@
   <footer class="site-footer">
     <p>&copy; 2025 My Video Library</p>
   </footer>
-
-  <script src="https://cdn.jsdelivr.net/gh/gokuthug1/gplr@v2.3.1/plr.js" defer></script>
+   <script src="https://cdn.jsdelivr.net/gh/gokuthug1/gplr@v2.3.1/plr.js" defer></script>
 </body>
 </html>
