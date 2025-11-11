@@ -1,155 +1,52 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Random Videos</title>
-  <style>
-    /* Global styles */
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-
-    body {
-      font-family: Arial, sans-serif;
-      background-color: #f4f4f9;
-      color: #333;
-    }
-
-    header {
-      background-color: #333;
-      color: white;
-      padding: 10px 20px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      position: sticky;
-      top: 0;
-      z-index: 1000;
-      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    }
-
-    header h1 {
-      font-size: 1.8rem;
-    }
-
-    nav {
-      display: flex;
-      gap: 15px;
-    }
-
-    nav a {
-      text-decoration: none;
-      color: white;
-      padding: 8px 12px;
-      border-radius: 5px;
-      transition: background-color 0.3s;
-    }
-
-    nav a:hover {
-      background-color: #555;
-    }
-
-    main {
-      padding: 20px;
-    }
-
-    h2 {
-      margin-bottom: 15px;
-      font-size: 1.8rem;
-      color: #333;
-      border-bottom: 2px solid #ccc;
-      padding-bottom: 5px;
-    }
-
-    /* Video grid layout */
-    .video-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-      gap: 20px;
-    }
-
-    .video-item {
-      text-align: center;
-    }
-
-    .video-item video {
-      width: 100%;
-      max-width: 300px;
-      border-radius: 10px;
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
-    }
-
-    .video-item video:hover {
-      transform: scale(1.05);
-      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-      cursor: pointer;
-    }
-
-    .video-item h3 {
-      margin-top: 10px;
-      font-size: 1.2rem;
-      color: #333;
-    }
-  </style>
+  <title>Random Videos - My Library</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <header>
-    <h1>Random Videos</h1>
+  <header class="site-header">
+    <h1>My Library</h1>
     <nav>
       <a href="index.html">Home</a>
       <a href="AnimeS.html">Anime</a>
-      <a href="RandomV.html">Random</a>
+      <a href="RandomV.html" class="active">Random</a>
     </nav>
   </header>
 
   <main>
-    <h2>Random Video Gallery</h2>
-    <div class="video-grid">
+    <h2 class="section-title">Random Video Gallery</h2>
+    <div class="item-grid">
 
-      <!-- Video 1 -->
-      <div class="video-item">
-        <video controls>
-          <source src="" type="video/mp4">
-          Your browser does not support the video tag.
-        </video>
-        <h3>Removed</h3>
+      <!-- Placeholder 1 -->
+      <div class="grid-item placeholder-item">
+        <h3>Random Video 1</h3>
       </div>
 
-      <!-- Video 2 -->
-      <div class="video-item">
-        <video controls>
-          <source src="" type="video/mp4">
-          Your browser does not support the video tag.
-        </video>
-        <h3>Removed</h3>
+      <!-- Placeholder 2 -->
+      <div class="grid-item placeholder-item">
+        <h3>Random Video 2</h3>
       </div>
 
-      <!-- Video 3 -->
-      <div class="video-item">
-        <video controls>
-          <source src="" type="video/mp4">
-          Your browser does not support the video tag.
-        </video>
+      <!-- Placeholder 3 -->
+      <div class="grid-item placeholder-item">
         <h3>Random Video 3</h3>
       </div>
 
-      <!-- Video 4 -->
-      <div class="video-item">
-        <video controls>
-          <source src="" type="video/mp4">
-          Your browser does not support the video tag.
-        </video>
+      <!-- Placeholder 4 -->
+      <div class="grid-item placeholder-item">
         <h3>Random Video 4</h3>
       </div>
 
     </div>
   </main>
+  
+  <footer class="site-footer">
+    <p>&copy; 2025 My Video Library</p>
+  </footer>
 
 </body>
 </html>
