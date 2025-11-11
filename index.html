@@ -3,133 +3,58 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Video Library</title>
-  <style>
-    /* Reset and global styles */
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-
-    body {
-      font-family: Arial, sans-serif;
-      background-color: #f4f4f9;
-      color: #333;
-    }
-
-    header {
-      background-color: #333;
-      color: white;
-      padding: 10px 20px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      position: sticky;
-      top: 0;
-      z-index: 1000;
-      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    }
-
-    header h1 {
-      font-size: 1.5rem;
-    }
-
-    nav {
-      display: flex;
-      gap: 15px;
-    }
-
-    nav a {
-      text-decoration: none;
-      color: white;
-      padding: 8px 12px;
-      border-radius: 5px;
-      transition: background-color 0.3s;
-    }
-
-    nav a:hover {
-      background-color: #555;
-    }
-
-    /* Section styling */
-    section {
-      padding: 20px;
-      margin-top: 10px;
-    }
-
-    section h2 {
-      margin-bottom: 15px;
-      font-size: 1.5rem;
-      color: #333;
-      border-bottom: 2px solid #ccc;
-      padding-bottom: 5px;
-    }
-
-    /* Video grid */
-    .video-container {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
-      gap: 25px;
-    }
-    
-    /* The script creates a .video-player-container, which we can style */
-    .video-item .video-player-container {
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
-    }
-
-    .video-item .video-player-container:hover {
-      transform: scale(1.03);
-      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.25);
-    }
-  </style>
+  <title>My Library - Home</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <header>
-    <h1>Video Library</h1>
+  <header class="site-header">
+    <h1>My Library</h1>
     <nav>
-      <a href="#fav-tv-shows">Fav TV Shows</a>
-      <a href="AnimeS.html">Anime Series</a>
+      <a href="index.html" class="active">Home</a>
+      <a href="AnimeS.html">Anime</a>
       <a href="RandomV.html">Random</a>
-      <a href="#test">Test</a>
     </nav>
   </header>
 
-  <!-- Fav TV Shows Section -->
-  <section id="fav-tv-shows">
-    <h2>Fav TV Shows</h2>
-    <div class="video-container">
-      <div class="video-item">
-        <video class="cvp" width="854" height="480">
-          <source src="fav-tv1.mp4" type="video/mp4">
-        </video>
+  <main>
+    <section id="fav-tv-shows">
+      <h2 class="section-title">Fav TV Shows</h2>
+      <div class="item-grid">
+        <div class="grid-item">
+          <video class="cvp" width="854" height="480">
+            <source src="fav-tv1.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="grid-item">
+          <video class="cvp" width="854" height="480">
+            <source src="fav-tv2.mp4" type="video/mp4">
+          </video>
+        </div>
       </div>
-      <div class="video-item">
-        <video class="cvp" width="854" height="480">
-          <source src="fav-tv2.mp4" type="video/mp4">
-        </video>
-      </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Test Section -->
-  <section id="test">
-    <h2>Test</h2>
-    <div class="video-container">
-      <div class="video-item">
-        <video class="cvp" width="854" height="480">
-          <source src="v.mp4" type="video/mp4">
-        </video>
+    <section id="test">
+      <h2 class="section-title">Test</h2>
+      <div class="item-grid">
+        <div class="grid-item">
+          <video class="cvp" width="854" height="480">
+            <source src="v.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="grid-item">
+          <video class="cvp" width="854" height="480">
+            <source src="v2.mp4" type="video/mp4">
+          </video>
+        </div>
       </div>
-      <div class="video-item">
-        <video class="cvp" width="854" height="480">
-          <source src="v2.mp4" type="video/mp4">
-        </video>
-      </div>
-    </div>
-  </section>
-  <script src="https://cdn.jsdelivr.net/gh/gokuthug1/gplr@v1.8.2/plr.js" defer></script>
+    </section>
+  </main>
+  
+  <footer class="site-footer">
+    <p>&copy; 2025 My Video Library</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/gh/gokuthug1/gplr@v2.3.1/plr.js" defer></script>
 </body>
 </html>
-
